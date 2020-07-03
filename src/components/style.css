@@ -32,4 +32,6 @@
 }
 .nav-link {
   color: white;
+  list-style-type: none;
+  text-decoration: none;
 }
