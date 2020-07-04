@@ -12,6 +12,7 @@
   width: 25%;
   height: 100vh;
   color: white;
+  text-align: center;
 }
 .second-section {
   display: flex;
@@ -31,8 +32,11 @@
 .third-section {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 25%;
   height: 100vh;
+  color: white;
+  text-align: center;
 }
 /* HOME SECTION */
 .about-page {

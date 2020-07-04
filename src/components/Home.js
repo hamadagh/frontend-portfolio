@@ -19,7 +19,15 @@ function Home() {
           <img src={Circle} alt="circle" className="circle" />
         </div>
       </div>
-      <div className="third-section"></div>
+      <div className="third-section">
+        <span>Logo</span>
+        <div>
+          <h3>Full-stack developer</h3>
+          <h5>
+            From <span>Berlin</span>
+          </h5>
+        </div>
+      </div>
     </div>
   );
 }
