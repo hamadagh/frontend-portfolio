@@ -11,7 +11,9 @@ function Projects() {
         <span className="project">Expense Tracker</span>
         <span className="project">Sugar Skull</span>
       </div>
-      <div className="all-projects"></div>
+      <div className="all-projects">
+        <span className="to-github">All Projects</span>
+      </div>
     </div>
   );
 }
