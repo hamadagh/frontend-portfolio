@@ -13,6 +13,27 @@
   height: 100vh;
   color: white;
 }
+.second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100vh;
+}
+.circle-image {
+  margin-right: auto;
+  margin-left: auto;
+}
+.circle {
+  width: 500px;
+  height: 500px;
+}
+.third-section {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100vh;
+}
 /* HOME SECTION */
 .about-page {
   background-color: #010101;
