@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 25%;
+  width: 23%;
   height: 100vh;
   color: white;
   margin-left: 40px;
@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 50%;
+  width: 54%;
   height: 100vh;
 }
 .circle-image {
@@ -47,16 +47,16 @@
 }
 .circle {
   width: 500px;
-  height: 500px;
+  height: 350px;
 }
 .third-section {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 23%;
   height: 100vh;
   color: white;
   text-align: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .my-name {
   display: flex;
@@ -65,13 +65,13 @@
 }
 .hamada {
   color: #ff0000;
-  font-size: 50px;
+  font-size: 40px;
 
   font-weight: 200;
 }
 .ghanem {
   color: #ff0000;
-  font-size: 50px;
+  font-size: 40px;
 }
 .icons {
   display: flex;
