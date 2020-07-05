@@ -29,10 +29,34 @@ function Home() {
       </div>
       <div className="third-section">
         <div className="icons">
-          <img src={Linkedin} alt="linkedin" className="icon" />
-          <img src={Github} alt="github" className="icon" />
-          <img src={Facebook} alt="facebook" className="icon" />
-          <img src={Instagram} alt="instagram" className="icon" />
+          <a
+            href="https://www.linkedin.com/in/ahmad-ghanem-822490182"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Linkedin} alt="linkedin" className="icon" />
+          </a>
+          <a
+            href="https://www.github.com/hamadagh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Github} alt="github" className="icon" />
+          </a>
+          <a
+            href="https://www.facebook.com/hamada.ghanem.35"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Facebook} alt="facebook" className="icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/hamada_ghanem"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Instagram} alt="instagram" className="icon" />
+          </a>
         </div>
       </div>
     </div>

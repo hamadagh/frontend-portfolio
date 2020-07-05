@@ -61,6 +61,7 @@
 .my-name {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 .hamada {
   color: #ff0000;
@@ -75,10 +76,11 @@
 .icons {
   display: flex;
   margin-bottom: 40px;
+  width: 100%;
+  justify-content: space-around;
 }
 .icon {
   width: 20px;
-  margin-right: 5vw;
 }
 /* ---------------------------------- */
 .about-page {
@@ -106,13 +108,8 @@
   font-size: 40px;
   color: #707070;
 }
-
-.about-icons {
-  align-self: baseline;
-}
-
-.about-icon {
-  width: 30px;
+.about-berlin {
+  color: #ff0000;
 }
 
 /* PROJECTS PAGE */
@@ -145,6 +142,7 @@
   font-size: 40px;
   margin-top: auto;
   margin-bottom: 20px;
+  color: #ff0000;
 }
 /* ----------------------------------- */
 .contact-page {
