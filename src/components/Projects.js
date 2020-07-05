@@ -1,9 +1,16 @@
 import React from "react";
+import Back from "./images/back.png";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 function Projects() {
   return (
     <div className="projects-page">
+      <div className="back-icon">
+        <Link to="/">
+          <img src={Back} alt="back" className="back-icon" />
+        </Link>
+      </div>
       <div className="projects">
         <span className="project">Real Time Chat App</span>
         <span className="project">Resume Generator</span>

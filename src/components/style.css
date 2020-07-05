@@ -16,7 +16,13 @@
   width: 25%;
   height: 100vh;
   color: white;
-  text-align: center;
+  margin-left: 40px;
+}
+.full-stack-section {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .full-stack {
   font-size: 30px;
@@ -46,11 +52,11 @@
 .third-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 25%;
   height: 100vh;
   color: white;
   text-align: center;
+  justify-content: flex-end;
 }
 .my-name {
   display: flex;
@@ -59,7 +65,7 @@
 .hamada {
   color: #ff0000;
   font-size: 50px;
-  opacity: 60%;
+
   font-weight: 200;
 }
 .ghanem {
@@ -68,6 +74,7 @@
 }
 .icons {
   display: flex;
+  margin-bottom: 40px;
 }
 .icon {
   width: 20px;

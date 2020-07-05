@@ -20,7 +20,7 @@ function About() {
         <div className="about-body-text">
           <span className="about-text">
             with a strong knowledge in building websites and <br></br>web
-            application using<span>Html</span>, <span>CSS</span>,{" "}
+            application using <span>Html</span>, <span>CSS</span>,{" "}
             <span>JavaScript</span>, <span>React</span>, <br></br>
             <span>Redux</span>, <span>Bootstrap</span>, <span>Node Js</span>,{" "}
             <span>Express</span>, <span>MongoDB</span>, <br></br>

@@ -10,8 +10,11 @@ function Home() {
   return (
     <div className="home-page">
       <div className="first-section">
-        <span>Logo</span>
-        <div>
+        <div className="my-name">
+          <span className="hamada">HAMADA</span>
+          <span className="ghanem">GHANEM</span>
+        </div>
+        <div className="full-stack-section">
           <span className="full-stack">Full-stack developer</span>
           <br></br>
           <span className="from">
@@ -25,10 +28,6 @@ function Home() {
         </div>
       </div>
       <div className="third-section">
-        <div className="my-name">
-          <span className="hamada">HAMADA</span>
-          <span className="ghanem">GHANEM</span>
-        </div>
         <div className="icons">
           <img src={Linkedin} alt="linkedin" className="icon" />
           <img src={Github} alt="github" className="icon" />
