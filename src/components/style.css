@@ -82,6 +82,11 @@
 .icon {
   width: 20px;
 }
+.icon:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
 /* ---------------------------------- */
 .about-page {
   background-color: #010101;
@@ -131,6 +136,10 @@
   font-size: 40px;
   margin-left: 5vw;
 }
+.project:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
 .all-projects {
   height: 20vh;
   width: 100%;
@@ -140,9 +149,15 @@
 .to-github {
   color: white;
   font-size: 40px;
+
+  color: #707070;
+}
+.to-github-link {
   margin-top: auto;
   margin-bottom: 20px;
-  color: #ff0000;
+}
+a {
+  text-decoration: none;
 }
 /* ----------------------------------- */
 .contact-page {
