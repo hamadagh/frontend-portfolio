@@ -20,12 +20,19 @@ function About() {
         <div className="about-body-text">
           <span className="about-text">
             with a strong knowledge in building websites and <br></br>web
-            application using <span>Html</span>, <span>CSS</span>,{" "}
-            <span>JavaScript</span>, <span>React</span>, <br></br>
-            <span>Redux</span>, <span>Bootstrap</span>, <span>Node Js</span>,{" "}
-            <span>Express</span>, <span>MongoDB</span>, <br></br>
-            <span>SQL</span>, <span>WordPress</span>, <span>Photoshop</span>,{" "}
-            <span>Illustrator</span> ...{" "}
+            application using <span className="skill">Html</span>,{" "}
+            <span className="skill">CSS</span>,{" "}
+            <span className="skill">JavaScript</span>,{" "}
+            <span className="skill">React</span>, <br></br>
+            <span className="skill">Redux</span>,{" "}
+            <span className="skill">Bootstrap</span>,{" "}
+            <span className="skill">Node Js</span>,{" "}
+            <span className="skill">Express</span>,{" "}
+            <span className="skill">MongoDB</span>, <br></br>
+            <span className="skill">SQL</span>,{" "}
+            <span className="skill">WordPress</span>,{" "}
+            <span className="skill">Photoshop</span>,{" "}
+            <span className="skill">Illustrator</span> ...{" "}
           </span>
         </div>
       </div>

@@ -116,6 +116,10 @@
 .about-berlin {
   color: #ff0000;
 }
+.skill:hover {
+  color: #ff0000;
+  cursor: grab;
+}
 
 /* PROJECTS PAGE */
 .projects-page {
