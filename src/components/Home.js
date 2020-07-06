@@ -1,5 +1,5 @@
 import React from "react";
-import Laptop from "./images/laptop.png";
+import Circle from "./images/circle.png";
 import Linkedin from "./images/linkedin.png";
 import Github from "./images/github.png";
 import Facebook from "./images/facebook.png";
@@ -24,7 +24,7 @@ function Home() {
       </div>
       <div className="second-section">
         <div className="circle-image">
-          <img src={Laptop} alt="circle" className="circle" />
+          <img src={Circle} alt="circle" className="circle" />
         </div>
       </div>
       <div className="third-section">
