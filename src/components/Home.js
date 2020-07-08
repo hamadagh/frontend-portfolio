@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Circle from "./images/circle.png";
 import Linkedin from "./images/linkedin.png";
 import Github from "./images/github.png";
@@ -7,6 +7,12 @@ import Instagram from "./images/instagram.png";
 import "./style.css";
 
 function Home() {
+  const [checked, setChecked] = useState({ checked: "red" });
+
+  const onValueChange = (e) => {
+    setChecked({ checked: e.target.value });
+  };
+
   return (
     <div className="home-page">
       <div className="first-section">
@@ -28,7 +34,48 @@ function Home() {
         </div>
       </div>
       <div className="third-section">
-        <div className="choose-color"></div>
+        <form className="radio-buttons">
+          <div className="radio-button">
+            <input
+              type="radio"
+              value="red"
+              checked={checked.checked === "red"}
+              onChange={onValueChange}
+              id="red"
+            />
+            <span className="red-checkmark checkmark"></span>
+          </div>
+          <div className="radio-button">
+            <input
+              type="radio"
+              value="blue"
+              checked={checked.checked === "blue"}
+              onChange={onValueChange}
+              id="blue"
+            />
+            <span className="blue-checkmark checkmark"></span>
+          </div>
+          <div className="radio-button">
+            <input
+              type="radio"
+              value="green"
+              checked={checked.checked === "green"}
+              onChange={onValueChange}
+              id="green"
+            />
+            <span className="green-checkmark checkmark"></span>
+          </div>
+          <div className="radio-button">
+            <input
+              type="radio"
+              value="pink"
+              checked={checked.checked === "pink"}
+              onChange={onValueChange}
+              id="pink"
+            />
+            <span className="pink-checkmark checkmark"></span>
+          </div>
+        </form>
         <div className="icons">
           <a
             href="https://www.linkedin.com/in/ahmad-ghanem-822490182"
