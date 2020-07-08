@@ -35,7 +35,7 @@ function Home() {
       </div>
       <div className="third-section">
         <form className="radio-buttons">
-          <div className="radio-button">
+          <div className="radio-button red-radio-button">
             <input
               type="radio"
               value="red"
@@ -45,7 +45,7 @@ function Home() {
             />
             <span className="red-checkmark checkmark"></span>
           </div>
-          <div className="radio-button">
+          <div className="radio-button blue-radio-button">
             <input
               type="radio"
               value="blue"
@@ -55,7 +55,7 @@ function Home() {
             />
             <span className="blue-checkmark checkmark"></span>
           </div>
-          <div className="radio-button">
+          <div className="radio-button green-radio-button">
             <input
               type="radio"
               value="green"
@@ -65,7 +65,7 @@ function Home() {
             />
             <span className="green-checkmark checkmark"></span>
           </div>
-          <div className="radio-button">
+          <div className="radio-button pink-radio-button">
             <input
               type="radio"
               value="pink"
