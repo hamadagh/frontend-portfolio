@@ -11,6 +11,13 @@ function Home() {
 
   const onValueChange = (e) => {
     setChecked({ checked: e.target.value });
+    if (checked.checked == "red") {
+      document.documentElement.style.setProperty("--color", "#ff0000");
+    } else if (checked.checked == "green") {
+      document.documentElement.style.setProperty("--color", "green");
+    } else if (checked.checked == "pink") {
+      document.documentElement.style.setProperty("--color", "pink");
+    }
   };
 
   return (
@@ -44,16 +51,6 @@ function Home() {
               id="red"
             />
             <span className="red-checkmark checkmark"></span>
-          </div>
-          <div className="radio-button blue-radio-button">
-            <input
-              type="radio"
-              value="blue"
-              checked={checked.checked === "blue"}
-              onChange={onValueChange}
-              id="blue"
-            />
-            <span className="blue-checkmark checkmark"></span>
           </div>
           <div className="radio-button green-radio-button">
             <input
