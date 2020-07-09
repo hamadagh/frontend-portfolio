@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Circle from "./images/circle.png";
 import Linkedin from "./images/linkedin.png";
 import Github from "./images/github.png";
@@ -20,6 +20,7 @@ function Home() {
     }
   };
 
+  const onColorChange = () => {};
   return (
     <div className="home-page">
       <div className="first-section">
