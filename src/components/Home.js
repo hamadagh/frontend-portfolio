@@ -14,9 +14,9 @@ function Home() {
   };
   useEffect(() => {
     if (checked.checked === "green") {
-      document.documentElement.style.setProperty("--color", "green");
+      document.documentElement.style.setProperty("--color", "#32ff00");
     } else if (checked.checked === "pink") {
-      document.documentElement.style.setProperty("--color", "pink");
+      document.documentElement.style.setProperty("--color", "#ff00f9");
     } else if (checked.checked === "red") {
       document.documentElement.style.setProperty("--color", "#ff0000");
     }
