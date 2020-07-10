@@ -26,7 +26,7 @@ function Home() {
       setShape(`${Circle}`);
       document.documentElement.style.setProperty("--color", "#ff0000");
     }
-  });
+  }, [checked.checked]);
 
   return (
     <div className="home-page">
