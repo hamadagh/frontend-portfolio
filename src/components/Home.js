@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Circle from "./images/circle.png";
+import Triangle from "./images/triangle.png";
+import Carre from "./images/carre.png";
 import Linkedin from "./images/linkedin.png";
 import Github from "./images/github.png";
 import Facebook from "./images/facebook.png";
@@ -8,16 +10,20 @@ import "./style.css";
 
 function Home() {
   const [checked, setChecked] = useState({ checked: "red" });
+  const [shape, setShape] = useState(`${Circle}`);
 
   const onValueChange = (e) => {
     setChecked({ checked: e.target.value });
   };
   useEffect(() => {
     if (checked.checked === "green") {
+      setShape(`${Triangle}`);
       document.documentElement.style.setProperty("--color", "#32ff00");
     } else if (checked.checked === "pink") {
+      setShape(`${Carre}`);
       document.documentElement.style.setProperty("--color", "#ff00f9");
     } else if (checked.checked === "red") {
+      setShape(`${Circle}`);
       document.documentElement.style.setProperty("--color", "#ff0000");
     }
   });
@@ -39,7 +45,7 @@ function Home() {
       </div>
       <div className="second-section">
         <div className="circle-image">
-          <img src={Circle} alt="circle" className="circle" />
+          <img src={shape} alt="circle" className="circle" />
         </div>
       </div>
       <div className="third-section">
