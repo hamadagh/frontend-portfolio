@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Circle from "./images/circle.png";
 import Linkedin from "./images/linkedin.png";
 import Github from "./images/github.png";
@@ -11,18 +11,17 @@ function Home() {
 
   const onValueChange = (e) => {
     setChecked({ checked: e.target.value });
-    onColorChange();
   };
-
-  const onColorChange = () => {
-    if (checked.checked === "red") {
-      document.documentElement.style.setProperty("--color", "#ff0000");
-    } else if (checked.checked === "green") {
+  useEffect(() => {
+    if (checked.checked === "green") {
       document.documentElement.style.setProperty("--color", "green");
     } else if (checked.checked === "pink") {
       document.documentElement.style.setProperty("--color", "pink");
+    } else if (checked.checked === "red") {
+      document.documentElement.style.setProperty("--color", "#ff0000");
     }
-  };
+  });
+
   return (
     <div className="home-page">
       <div className="first-section">
