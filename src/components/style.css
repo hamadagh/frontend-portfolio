@@ -34,7 +34,7 @@
   font-weight: 200;
 }
 .ghanem {
-  color: #ff0000;
+  color: var(--color);
   font-size: 40px;
 }
 .full-stack-section {
@@ -51,7 +51,7 @@
 }
 .berlin {
   font-size: 22px;
-  color: #ff0000;
+  color: var(--color);
 }
 .second-section {
   display: flex;
@@ -98,10 +98,10 @@
   background-color: #ff0000;
 }
 .green-radio-button input:checked ~ .green-checkmark {
-  background-color: green;
+  background-color: #32ff00;
 }
 .pink-radio-button input:checked ~ .pink-checkmark {
-  background-color: pink;
+  background-color: #ff00f9;
 }
 .icons {
   display: flex;
@@ -144,10 +144,10 @@
   color: #707070;
 }
 .about-berlin {
-  color: #ff0000;
+  color: var(--color);
 }
 .skill:hover {
-  color: #ff0000;
+  color: var(--color);
   cursor: grab;
 }
 
@@ -171,7 +171,7 @@
   margin-left: 5vw;
 }
 .project:hover {
-  color: #ff0000;
+  color: var(--color);
   cursor: pointer;
 }
 .all-projects {
