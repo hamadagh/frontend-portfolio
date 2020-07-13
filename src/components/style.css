@@ -202,7 +202,12 @@ a {
   height: 100vh;
   display: flex;
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
 
+/* ----------------------------------- */
 .nav-bar {
   position: fixed;
   right: 0;
