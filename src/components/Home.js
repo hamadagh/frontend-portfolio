@@ -35,6 +35,8 @@ function Home() {
       case "pink":
         setColor({ color: "red" });
         break;
+      default:
+        setColor({ color: "red" });
     }
   };
   useEffect(() => {
