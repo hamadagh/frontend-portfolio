@@ -26,16 +26,20 @@
   margin-top: 140px;
 }
 .hello-you {
+  cursor: pointer;
   position: relative;
   top: 100px;
   left: 10vw;
   z-index: 10;
 }
-.hamada {
+.greeting {
   color: white;
   font-size: 17ch;
-
   font-weight: 200;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .shapes {
   display: flex;
@@ -46,7 +50,7 @@
   left: 9vw;
   z-index: 1;
 }
-.carre {
+.red-carre {
   min-width: 8ch;
   min-height: 8ch;
   width: 16vw;
@@ -60,7 +64,7 @@
   position: relative;
   z-index: 1;
 }
-.triangle {
+.red-triangle {
   min-width: 8ch;
   min-height: 8ch;
   width: 14vw;
@@ -74,7 +78,7 @@
   position: relative;
   z-index: 9;
 }
-.circle {
+.red-circle {
   min-width: 8ch;
   min-height: 8ch;
   width: 15vw;
@@ -88,20 +92,112 @@
   position: relative;
   z-index: 1;
 }
+
+.green-carre {
+  min-width: 8ch;
+  min-height: 8ch;
+  width: 16vw;
+  height: 16vw;
+  max-width: 24ch;
+  max-height: 24ch;
+  background-image: url(./images/4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.green-triangle {
+  min-width: 8ch;
+  min-height: 8ch;
+  width: 14vw;
+  height: 14vw;
+  max-width: 24ch;
+  max-height: 24ch;
+  background-image: url(./images/5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 9;
+}
+.green-circle {
+  min-width: 8ch;
+  min-height: 8ch;
+  width: 15vw;
+  height: 15vw;
+  max-width: 28ch;
+  max-height: 28ch;
+  background-image: url(./images/6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.pink-carre {
+  min-width: 8ch;
+  min-height: 8ch;
+  width: 16vw;
+  height: 16vw;
+  max-width: 24ch;
+  max-height: 24ch;
+  background-image: url(./images/7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.pink-triangle {
+  min-width: 8ch;
+  min-height: 8ch;
+  width: 14vw;
+  height: 14vw;
+  max-width: 24ch;
+  max-height: 24ch;
+  background-image: url(./images/8.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 9;
+}
+.pink-circle {
+  min-width: 8ch;
+  min-height: 8ch;
+  width: 15vw;
+  height: 15vw;
+  max-width: 28ch;
+  max-height: 28ch;
+  background-image: url(./images/9.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
 .full-stack-section {
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+.im {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.hamada {
+  color: var(--color);
+}
 .full-stack {
   font-size: 30px;
 }
 .from {
-  font-size: 22px;
+  font-size: 24px;
 }
 .berlin {
-  font-size: 22px;
   color: var(--color);
 }
 
