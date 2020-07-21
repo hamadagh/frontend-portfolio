@@ -17,25 +17,76 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 23%;
+  width: 77%;
   height: 100vh;
   color: white;
   margin-left: 40px;
 }
 .my-name {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
+  margin-top: 140px;
+}
+.hello-you {
+  position: relative;
+  top: 100px;
+  left: 10vw;
+  z-index: 10;
 }
 .hamada {
-  color: var(--color);
-  font-size: 40px;
+  color: white;
+  font-size: 17ch;
 
   font-weight: 200;
 }
-.ghanem {
-  color: var(--color);
-  font-size: 40px;
+.shapes {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 100px;
+  left: 9vw;
+  z-index: 1;
+}
+.carre {
+  min-width: 8ch;
+  min-height: 8ch;
+  width: 16vw;
+  height: 16vw;
+  max-width: 24ch;
+  max-height: 24ch;
+  background-image: url(./images/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.triangle {
+  min-width: 8ch;
+  min-height: 8ch;
+  width: 14vw;
+  height: 14vw;
+  max-width: 24ch;
+  max-height: 24ch;
+  background-image: url(./images/2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 9;
+}
+.circle {
+  min-width: 8ch;
+  min-height: 8ch;
+  width: 15vw;
+  height: 15vw;
+  max-width: 28ch;
+  max-height: 28ch;
+  background-image: url(./images/3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
 }
 .full-stack-section {
   margin-bottom: 40px;
@@ -53,21 +104,7 @@
   font-size: 22px;
   color: var(--color);
 }
-.second-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 54%;
-  height: 100vh;
-}
-.circle-image {
-  margin-right: auto;
-  margin-left: auto;
-}
-.circle {
-  width: 500px;
-  height: 500px;
-}
+
 .third-section {
   display: flex;
   flex-direction: column;

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useSpring, animated } from "react-spring";
 import Circle from "./images/circle.png";
 import Triangle from "./images/triangle.png";
 import Carre from "./images/carre.png";
@@ -8,9 +9,19 @@ import Facebook from "./images/facebook.png";
 import Instagram from "./images/instagram.png";
 import "./style.css";
 
+const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
+const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
+const trans2 = (x, y) => `translate3d(${x / 8 + 635}px,${y / 8 - 270}px,0)`;
+const trans3 = (x, y) => `translate3d(${x / 6 - 490}px,${y / 6 - 213}px,0)`;
+const trans4 = (x, y) => `translate3d(${x / 6 + 20}px,${y / 6 - 65}px,0)`;
+
 function Home() {
   const [checked, setChecked] = useState({ checked: "red" });
   const [shape, setShape] = useState(`${Circle}`);
+  const [props, set] = useSpring(() => ({
+    xy: [0, 0],
+    config: { mass: 10, tension: 550, friction: 140 },
+  }));
 
   const onValueChange = (e) => {
     setChecked({ checked: e.target.value });
@@ -31,9 +42,30 @@ function Home() {
   return (
     <div className="home-page">
       <div className="first-section">
-        <div className="my-name">
-          <span className="hamada">HAMADA</span>
-          <span className="ghanem">GHANEM</span>
+        <div
+          className="my-name"
+          onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
+        >
+          <animated.div
+            className="hello-you"
+            style={{ transform: props.xy.interpolate(trans1) }}
+          >
+            <span className="hamada">Hello you !</span>
+          </animated.div>
+          <div className="shapes">
+            <animated.div
+              className="carre"
+              style={{ transform: props.xy.interpolate(trans2) }}
+            />
+            <animated.div
+              className="triangle"
+              style={{ transform: props.xy.interpolate(trans4) }}
+            />
+            <animated.div
+              className="circle"
+              style={{ transform: props.xy.interpolate(trans3) }}
+            />
+          </div>
         </div>
         <div className="full-stack-section">
           <span className="full-stack">Full-stack developer</span>
@@ -41,11 +73,6 @@ function Home() {
           <span className="from">
             From <span className="berlin">Berlin</span>
           </span>
-        </div>
-      </div>
-      <div className="second-section">
-        <div className="circle-image">
-          <img src={shape} alt="circle" className="circle" />
         </div>
       </div>
       <div className="third-section">
