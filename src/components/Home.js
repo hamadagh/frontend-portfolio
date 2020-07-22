@@ -5,12 +5,13 @@ import Github from "./images/github.png";
 import Facebook from "./images/facebook.png";
 import Instagram from "./images/instagram.png";
 import "./style.css";
+import "./responsive.css";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
-const trans2 = (x, y) => `translate3d(${x / 8 + 635}px,${y / 8 - 270}px,0)`;
-const trans3 = (x, y) => `translate3d(${x / 6 - 490}px,${y / 6 - 213}px,0)`;
-const trans4 = (x, y) => `translate3d(${x / 6 + 20}px,${y / 6 - 65}px,0)`;
+const trans2 = (x, y) => `translate3d(${x / 8 + 735}px,${y / 8 - 170}px,0)`;
+const trans3 = (x, y) => `translate3d(${x / 6 + 70}px,${y / 6 - 513}px,0)`;
+const trans4 = (x, y) => `translate3d(${x / 6 + 340}px,${y / 6 - 132}px,0)`;
 
 function Home() {
   const [color, setColor] = useState({ color: "red" });
@@ -78,20 +79,19 @@ function Home() {
           >
             <span className="greeting">Hello you !</span>
           </animated.div>
-          <div className="shapes">
-            <animated.div
-              className={className.carre}
-              style={{ transform: props.xy.interpolate(trans2) }}
-            />
-            <animated.div
-              className={className.triangle}
-              style={{ transform: props.xy.interpolate(trans4) }}
-            />
-            <animated.div
-              className={className.circle}
-              style={{ transform: props.xy.interpolate(trans3) }}
-            />
-          </div>
+
+          <animated.div
+            className={className.carre}
+            style={{ transform: props.xy.interpolate(trans2) }}
+          />
+          <animated.div
+            className={className.triangle}
+            style={{ transform: props.xy.interpolate(trans4) }}
+          />
+          <animated.div
+            className={className.circle}
+            style={{ transform: props.xy.interpolate(trans3) }}
+          />
         </div>
         <div className="full-stack-section">
           <span className="im">
@@ -99,8 +99,8 @@ function Home() {
           </span>
           <span className="full-stack">Full-stack developer</span>
           <br></br>
-          <span className="from">
-            From <span className="berlin">Berlin</span>
+          <span className="in">
+            In <span className="berlin">Berlin</span>
           </span>
         </div>
       </div>

@@ -1,0 +1,36 @@
+@media only screen and (max-width: 400px) {
+  /* home page */
+  .first-section {
+    margin-left: 10px;
+    width: 65%;
+  }
+  .greeting {
+    font-size: 3ch;
+  }
+  .im {
+    font-size: 14px;
+  }
+  .full-stack-section {
+    margin-bottom: 15px;
+  }
+  .full-stack {
+    font-size: 16px;
+  }
+  .in {
+    font-size: 14px;
+  }
+  .third-section {
+    width: 35%;
+  }
+  /* home page */
+}
+@media only screen and (min-width: 401px) and (max-width: 759px) {
+}
+@media only screen and (min-width: 760px) and (max-width: 999px) {
+}
+@media only screen and (min-width: 1000px) and (max-width: 1390px) {
+}
+@media only screen and (min-width: 1391px) and (max-width: 1600px) {
+}
+@media only screen and (min-width: 1601px) {
+}
