@@ -5,11 +5,14 @@
     width: 65%;
   }
   .greeting {
-    font-size: 3ch;
+    font-size: 5ch;
+    position: relative;
+    top: 65px;
   }
   .im {
     font-size: 14px;
   }
+
   .full-stack-section {
     margin-bottom: 15px;
   }
@@ -18,6 +21,91 @@
   }
   .in {
     font-size: 14px;
+  }
+  .red-carre,
+  .red-triangle,
+  .red-circle,
+  .green-carre,
+  .green-triangle,
+  .green-circle,
+  .pink-carre,
+  .pink-triangle,
+  .pink-circle {
+    display: none;
+  }
+  .mobile-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+  }
+  .red-carre-2 {
+    width: 30vw;
+    height: 30vw;
+    background-image: url(./images/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+  }
+
+  .red-circle-2 {
+    width: 30vw;
+    height: 30vw;
+    background-image: url(./images/3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  .green-carre-2 {
+    width: 30vw;
+    height: 30vw;
+    background-image: url(./images/4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+  }
+
+  .green-circle-2 {
+    width: 30vw;
+    height: 30vw;
+    background-image: url(./images/6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  .pink-carre-2 {
+    width: 30vw;
+    height: 30vw;
+    background-image: url(./images/7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+  }
+
+  .pink-circle-2 {
+    width: 30vw;
+    height: 30vw;
+    background-image: url(./images/9.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
   }
   .third-section {
     width: 35%;
