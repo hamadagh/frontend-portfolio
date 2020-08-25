@@ -20,7 +20,7 @@ function Contact() {
             method="post"
             data-netlify="true"
             onSubmit="submit"
-            action={`/${Success}`}
+            action="/done"
           >
             <input type="hidden" name="form-name" value="contact" />
             <input
