@@ -1,6 +1,7 @@
 import React from "react";
 import Back from "./images/back.png";
 import { Link } from "react-router-dom";
+import Success from "./Success";
 import "./style.css";
 
 function Contact() {
@@ -19,7 +20,7 @@ function Contact() {
             method="post"
             data-netlify="true"
             onSubmit="submit"
-            action="/contact/success"
+            action={`/${Success}`}
           >
             <input type="hidden" name="form-name" value="contact" />
             <input
