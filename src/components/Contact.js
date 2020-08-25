@@ -26,7 +26,7 @@ function Contact() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", formInfo }),
+      body: encode({ "form-name": "contact", ...formInfo }),
     })
       .then(() => console.log("sent !"))
       .catch((error) => alert(error));
