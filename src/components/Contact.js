@@ -1,9 +1,16 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Back from "./images/back.png";
 import { Link } from "react-router-dom";
 import "./style.css";
 
 function Contact() {
+  let history = useHistory();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    history.push("/done");
+  };
   return (
     <div className="contact-page">
       <div className="contact-left-part">
@@ -18,7 +25,7 @@ function Contact() {
             name="contact"
             method="post"
             data-netlify="true"
-            onSubmit="submit"
+            onSubmit={handleSubmit}
             action="/done"
           >
             <input type="hidden" name="form-name" value="contact" />
@@ -27,18 +34,21 @@ function Contact() {
               placeholder="Name"
               name="name"
               className="contact-name"
+              required
             />
             <input
               type="text"
               placeholder="Email"
               name="email"
               className="contact-email"
+              required
             />
             <textarea
               type="text"
               placeholder="Message"
               name="message"
               className="contact-message"
+              required
             />
             <button type="submit" className="contact-form-button">
               Send
