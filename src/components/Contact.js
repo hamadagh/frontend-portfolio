@@ -20,7 +20,12 @@ function Contact() {
           onSubmit="submit"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <input type="text" placeholder="name" name="name" />
+          <input
+            type="text"
+            placeholder="name"
+            name="name"
+            className="contact-name"
+          />
           <input type="text" placeholder="email" name="email" />
           <input type="text" placeholder="message" name="message" />
           <button type="submit">Send</button>

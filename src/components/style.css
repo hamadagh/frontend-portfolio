@@ -310,6 +310,19 @@ a {
   display: flex;
   flex-direction: column;
 }
+.contact-left-part {
+  width: 50%;
+}
+.contact-right-part {
+  width: 50%;
+}
+.contact-name {
+  background-color: rgba(255, 255, 255, 0);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: white;
+}
 .success-page {
   background-color: #010101;
   width: 100%;
