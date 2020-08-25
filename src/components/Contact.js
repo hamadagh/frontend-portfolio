@@ -1,13 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Back from "./images/back.png";
 import { Link } from "react-router-dom";
 import "./style.css";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 function Contact() {
   let history = useHistory();
+  const [formInfo, setFormInfo] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
+  const handleChange = (e) => {
+    setFormInfo({ [e.target.name]: e.target.value });
+    console.log(formInfo);
+  };
   const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", formInfo }),
+    })
+      .then(() => console.log("sent !"))
+      .catch((error) => alert(error));
     e.preventDefault();
     history.push("/done");
   };
@@ -34,6 +56,7 @@ function Contact() {
               placeholder="Name"
               name="name"
               className="contact-name"
+              onChange={handleChange}
               required
             />
             <input
@@ -41,6 +64,7 @@ function Contact() {
               placeholder="Email"
               name="email"
               className="contact-email"
+              onChange={handleChange}
               required
             />
             <textarea
@@ -48,6 +72,7 @@ function Contact() {
               placeholder="Message"
               name="message"
               className="contact-message"
+              onChange={handleChange}
               required
             />
             <button type="submit" className="contact-form-button">
