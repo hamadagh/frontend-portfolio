@@ -7,11 +7,12 @@ function Contact() {
       <div className="contact-left-part">
         <form
           className="contact-form"
-          name="contact v1"
+          name="contact"
           method="post"
           data-netlify="true"
           onSubmit="submit"
         >
+          <input type="hidden" name="from-name" value="contact" />
           <input type="text" placeholder="name" name="name" />
           <input type="text" placeholder="email" name="email" />
           <input type="text" placeholder="message" name="message" />
