@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
+import Success from "./components/Success";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} exact />
         <Route path="/contact" component={Contact} />
+        <Route path="/success" component={Success} />
       </Switch>
     </BrowserRouter>
   );

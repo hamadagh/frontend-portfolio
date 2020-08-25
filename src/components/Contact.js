@@ -1,10 +1,17 @@
 import React from "react";
+import Back from "./images/back.png";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 function Contact() {
   return (
     <div className="contact-page">
       <div className="contact-left-part">
+        <div className="back-icon">
+          <Link to="/">
+            <img src={Back} alt="back" className="back-icon" />
+          </Link>
+        </div>
         <form
           className="contact-form"
           name="contact"
