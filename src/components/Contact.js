@@ -19,8 +19,7 @@ function Contact() {
   });
 
   const handleChange = (e) => {
-    setFormInfo({ [e.target.name]: e.target.value });
-    console.log(formInfo);
+    setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
   };
   const handleSubmit = (e) => {
     fetch("/", {
@@ -42,12 +41,7 @@ function Contact() {
           </Link>
         </div>
         <div className="form-container">
-          <form
-            className="contact-form"
-            name="contact"
-            method="post"
-            onSubmit={handleSubmit}
-          >
+          <form className="contact-form" onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
