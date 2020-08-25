@@ -26,8 +26,18 @@ function Contact() {
             name="name"
             className="contact-name"
           />
-          <input type="text" placeholder="email" name="email" />
-          <input type="text" placeholder="message" name="message" />
+          <input
+            type="text"
+            placeholder="email"
+            name="email"
+            className="contact-email"
+          />
+          <input
+            type="text"
+            placeholder="message"
+            name="message"
+            className="contact-message"
+          />
           <button type="submit">Send</button>
         </form>
       </div>

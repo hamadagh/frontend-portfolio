@@ -321,7 +321,24 @@ a {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.399);
+  margin-bottom: 10px;
+}
+.contact-email {
+  background-color: rgba(255, 255, 255, 0);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: rgba(255, 255, 255, 0.399);
+  margin-bottom: 10px;
+}
+.contact-message {
+  background-color: rgba(255, 255, 255, 0);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: rgba(255, 255, 255, 0.399);
+  margin-bottom: 10px;
 }
 .success-page {
   background-color: #010101;
