@@ -46,9 +46,7 @@ function Contact() {
             className="contact-form"
             name="contact"
             method="post"
-            data-netlify="true"
             onSubmit={handleSubmit}
-            action="/done"
           >
             <input type="hidden" name="form-name" value="contact" />
             <input
@@ -56,6 +54,7 @@ function Contact() {
               placeholder="Name"
               name="name"
               className="contact-name"
+              value={formInfo.name}
               onChange={handleChange}
               required
             />
@@ -64,6 +63,7 @@ function Contact() {
               placeholder="Email"
               name="email"
               className="contact-email"
+              value={formInfo.email}
               onChange={handleChange}
               required
             />
@@ -72,6 +72,7 @@ function Contact() {
               placeholder="Message"
               name="message"
               className="contact-message"
+              value={formInfo.message}
               onChange={handleChange}
               required
             />
