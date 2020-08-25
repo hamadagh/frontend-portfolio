@@ -12,10 +12,10 @@ function Contact() {
           data-netlify="true"
           onSubmit="submit"
         >
-          <input type="text" placeholder="name" />
-          <input type="text" placeholder="email" />
-          <input type="text" placeholder="message" />
-          <button>Send</button>
+          <input type="text" placeholder="name" name="name" />
+          <input type="text" placeholder="email" name="email" />
+          <input type="text" placeholder="message" name="message" />
+          <button type="submit">Send</button>
         </form>
       </div>
       <div className="contact-right-part">
