@@ -12,34 +12,38 @@ function Contact() {
             <img src={Back} alt="back" className="back-icon" />
           </Link>
         </div>
-        <form
-          className="contact-form"
-          name="contact"
-          method="post"
-          data-netlify="true"
-          onSubmit="submit"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <input
-            type="text"
-            placeholder="name"
-            name="name"
-            className="contact-name"
-          />
-          <input
-            type="text"
-            placeholder="email"
-            name="email"
-            className="contact-email"
-          />
-          <input
-            type="text"
-            placeholder="message"
-            name="message"
-            className="contact-message"
-          />
-          <button type="submit">Send</button>
-        </form>
+        <div className="form-container">
+          <form
+            className="contact-form"
+            name="contact"
+            method="post"
+            data-netlify="true"
+            onSubmit="submit"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              className="contact-name"
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              name="email"
+              className="contact-email"
+            />
+            <textarea
+              type="text"
+              placeholder="Message"
+              name="message"
+              className="contact-message"
+            />
+            <button type="submit" className="contact-form-button">
+              Send
+            </button>
+          </form>
+        </div>
       </div>
       <div className="contact-right-part">
         <div className="contact-shape">

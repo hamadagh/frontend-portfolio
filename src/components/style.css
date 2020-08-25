@@ -1,5 +1,7 @@
 :root {
   --color: #ff0000;
+  --textShadow: 0 0 1px #ff0000, 0 0 5px #ff000082, 0 0 7px #ff1c1c6d;
+  --boxShadow: 0 0 1px #ff0000, 0 0 5px #ff0000, 0 0 7px #ff1c1c;
 }
 
 * {
@@ -188,6 +190,7 @@
 }
 .hamada {
   color: var(--color);
+  text-shadow: var(--textShadow);
 }
 .full-stack {
   font-size: 30px;
@@ -316,17 +319,29 @@ a {
 .contact-right-part {
   width: 50%;
 }
+.form-container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 150px;
+}
 .contact-name {
   background-color: rgba(255, 255, 255, 0);
   border-top: none;
   border-right: none;
   border-left: none;
   border-color: rgba(255, 255, 255, 0.399);
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   outline: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 .contact-name:focus {
   border-color: white;
+}
+.contact-name::placeholder {
+  font-size: 1em;
 }
 .contact-email {
   background-color: rgba(255, 255, 255, 0);
@@ -334,23 +349,46 @@ a {
   border-right: none;
   border-left: none;
   border-color: rgba(255, 255, 255, 0.399);
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   outline: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 .contact-email:focus {
   border-color: white;
 }
+.contact-email::placeholder {
+  font-size: 1em;
+}
 .contact-message {
   background-color: rgba(255, 255, 255, 0);
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  height: 100px;
+  resize: none;
+  border-radius: 5px;
+  border-width: 1.5px;
   border-color: rgba(255, 255, 255, 0.399);
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   outline: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 .contact-message:focus {
   border-color: white;
+}
+.contact-message::placeholder {
+  font-size: 1em;
+}
+.contact-form-button {
+  background-color: var(--color);
+  border: none;
+  color: white;
+  text-decoration: none;
+  padding: 16px 32px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  box-shadow: var(--boxShadow);
 }
 .success-page {
   background-color: #010101;

@@ -54,6 +54,10 @@ function Home() {
         circle2: "green-circle-2",
       });
       document.documentElement.style.setProperty("--color", "#32ff00");
+      document.documentElement.style.setProperty(
+        "--textShadow",
+        "0 0 1px #32ff00, 0 0 5px #33ff0090, 0 0 7px #33ff003e"
+      );
     } else if (color.color === "pink") {
       setClassName({
         carre: "pink-carre",
@@ -64,6 +68,10 @@ function Home() {
         circle2: "pink-circle-2",
       });
       document.documentElement.style.setProperty("--color", "#ff00f9");
+      document.documentElement.style.setProperty(
+        "--textShadow",
+        "0 0 1px #ff00f9, 0 0 5px #ff00fb85, 0 0 7px #ff00fb3c"
+      );
     } else if (color.color === "red") {
       setClassName({
         carre: "red-carre",
@@ -74,6 +82,10 @@ function Home() {
         circle2: "red-circle-2",
       });
       document.documentElement.style.setProperty("--color", "#ff0000");
+      document.documentElement.style.setProperty(
+        "--textShadow",
+        "0 0 1px #ff0000, 0 0 5px #ff000082, 0 0 7px #ff1c1c6d"
+      );
     }
   }, [color.color]);
 
