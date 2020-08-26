@@ -437,17 +437,29 @@ a {
   padding-inline-start: 0px;
 }
 
-.list-item {
+.list-item1,
+.list-item2,
+.list-item3 {
+  opacity: 0;
   transform: rotate(90deg);
   position: relative;
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  top: -80px;
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
-.list-item.open {
-  top: -60px;
-  opacity: 0;
+.list-item1.open {
+  top: -20px;
+  opacity: 1;
+}
+.list-item2.open {
+  top: -20px;
+  opacity: 1;
+}
+.list-item3.open {
+  top: -20px;
+  opacity: 1;
 }
 .nav-link {
   color: white;

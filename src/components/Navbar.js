@@ -20,17 +20,17 @@ function Navbar() {
         <span></span>
       </div>
       <ul className="nav">
-        <li className={`list-item ${Navbar}`}>
+        <li className={`list-item1 ${Navbar}`}>
           <Link to="/about" className="nav-link">
             ABOUT
           </Link>
         </li>
-        <li className={`list-item ${Navbar}`}>
+        <li className={`list-item2 ${Navbar}`}>
           <Link to="/projects" className="nav-link">
             PROJECTS
           </Link>
         </li>
-        <li className={`list-item ${Navbar}`}>
+        <li className={`list-item3 ${Navbar}`}>
           <Link to="/contact" className="nav-link">
             CONTACT
           </Link>
