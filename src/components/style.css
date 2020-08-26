@@ -200,6 +200,7 @@
 }
 .berlin {
   color: var(--color);
+  text-shadow: var(--textShadow);
 }
 
 .third-section {
@@ -254,9 +255,12 @@
 }
 .about-berlin {
   color: var(--color);
+  text-shadow: var(--textShadow);
 }
 .skill:hover {
   color: var(--color);
+  text-shadow: var(--textShadow);
+
   cursor: grab;
 }
 
@@ -281,6 +285,8 @@
 }
 .project:hover {
   color: var(--color);
+  text-shadow: var(--textShadow);
+
   cursor: pointer;
 }
 .all-projects {
