@@ -283,6 +283,9 @@
   font-size: 40px;
   margin-left: 5vw;
 }
+.project-link {
+  width: max-content;
+}
 .project:hover {
   color: var(--color);
   text-shadow: var(--textShadow);

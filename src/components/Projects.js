@@ -16,6 +16,7 @@ function Projects() {
           href="https://github.com/hamadagh/Real-time-chat-app"
           target="_blank"
           rel="noopener noreferrer"
+          className="project-link"
         >
           <span className="project">Real Time Chat App</span>
         </a>
@@ -23,6 +24,7 @@ function Projects() {
           href="https://githubresume.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
+          className="project-link"
         >
           <span className="project">Resume Generator</span>
         </a>{" "}
@@ -30,6 +32,7 @@ function Projects() {
           href="https://githubrepository.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
+          className="project-link"
         >
           <span className="project">Gith Repo App</span>
         </a>{" "}
@@ -37,6 +40,7 @@ function Projects() {
           href="https://expense-tracker-123.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
+          className="project-link"
         >
           <span className="project">Expense Tracker</span>
         </a>{" "}
@@ -44,6 +48,7 @@ function Projects() {
           href="https://sugarskull.de"
           target="_blank"
           rel="noopener noreferrer"
+          className="project-link"
         >
           <span className="project">Sugar Skull</span>
         </a>
@@ -53,7 +58,7 @@ function Projects() {
           href="https://github.com/hamadagh"
           target="_blank"
           rel="noopener noreferrer"
-          className="to-github-link"
+          className="to-github-link project-link"
         >
           <span className="to-github">All Projects</span>
         </a>
