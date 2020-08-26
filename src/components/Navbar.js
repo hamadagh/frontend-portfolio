@@ -1,27 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const [Navbar, setNavbar] = useState("close");
+
+  const handleClick = () => {
+    if (Navbar === "close") {
+      setNavbar("open");
+    } else {
+      setNavbar("close");
+    }
+  };
   return (
     <div className="nav-bar">
-      <div id="nav-icon">
+      <div id="nav-icon" onClick={handleClick} className={Navbar}>
         <span></span>
         <span></span>
         <span></span>
         <span></span>
       </div>
       <ul className="nav">
-        <li className="list-item">
+        <li className={`list-item ${Navbar}`}>
           <Link to="/about" className="nav-link">
             ABOUT
           </Link>
         </li>
-        <li className="list-item">
+        <li className={`list-item ${Navbar}`}>
           <Link to="/projects" className="nav-link">
             PROJECTS
           </Link>
         </li>
-        <li className="list-item">
+        <li className={`list-item ${Navbar}`}>
           <Link to="/contact" className="nav-link">
             CONTACT
           </Link>

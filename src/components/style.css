@@ -434,9 +434,20 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding-inline-start: 0px;
 }
+
 .list-item {
   transform: rotate(90deg);
+  position: relative;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.list-item.open {
+  top: -60px;
+  opacity: 0;
 }
 .nav-link {
   color: white;
@@ -446,9 +457,9 @@ a {
 
 #nav-icon {
   width: 40px;
-  height: 45px;
+  height: 35px;
   position: relative;
-
+  align-self: center;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -458,6 +469,7 @@ a {
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  margin-top: 20px;
 }
 #nav-icon span {
   display: block;
@@ -491,27 +503,25 @@ a {
 }
 
 #nav-icon.open span:nth-child(1) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 #nav-icon.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  opacity: 0;
+  left: -60px;
 }
 
 #nav-icon.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  top: 10px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
-
 #nav-icon.open span:nth-child(4) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
+  opacity: 0;
 }
