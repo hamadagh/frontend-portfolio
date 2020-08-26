@@ -4,9 +4,15 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="nav-bar">
+      <div id="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul className="nav">
         <li className="list-item">
-          <Link to="/about" className="nav-link nav-link-about">
+          <Link to="/about" className="nav-link">
             ABOUT
           </Link>
         </li>
