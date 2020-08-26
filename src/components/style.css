@@ -218,6 +218,8 @@
   margin-bottom: 40px;
   width: 100%;
   justify-content: space-around;
+  position: relative;
+  z-index: 11;
 }
 .icon {
   width: 20px;
@@ -430,7 +432,7 @@ a {
   flex-direction: column;
   height: 100vh;
   right: 0;
-  z-index: 11;
+  z-index: 10;
 }
 .nav {
   height: 100%;
