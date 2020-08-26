@@ -149,7 +149,7 @@ function Home() {
         <div></div>
         <div className="icons">
           <a
-            href="https://www.linkedin.com/in/ahmad-ghanem-822490182"
+            href="https://www.linkedin.com/in/hamada-ghanem-822490182"
             target="_blank"
             rel="noopener noreferrer"
           >
