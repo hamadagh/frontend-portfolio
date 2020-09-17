@@ -19,9 +19,6 @@ function Home() {
     carre: "red-carre",
     triangle: "red-triangle",
     circle: "red-circle",
-    carre2: "red-carre-2",
-    triangle2: "red-triangle-2",
-    circle2: "red-circle-2",
   });
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
@@ -49,9 +46,6 @@ function Home() {
         carre: "green-carre",
         triangle: "green-triangle",
         circle: "green-circle",
-        carre2: "green-carre-2",
-        triangle2: "green-triangle-2",
-        circle2: "green-circle-2",
       });
       document.documentElement.style.setProperty("--color", "#32ff00");
       document.documentElement.style.setProperty(
@@ -67,9 +61,6 @@ function Home() {
         carre: "pink-carre",
         triangle: "pink-triangle",
         circle: "pink-circle",
-        carre2: "pink-carre-2",
-        triangle2: "pink-triangle-2",
-        circle2: "pink-circle-2",
       });
       document.documentElement.style.setProperty("--color", "#ff00f9");
       document.documentElement.style.setProperty(
@@ -85,9 +76,6 @@ function Home() {
         carre: "red-carre",
         triangle: "red-triangle",
         circle: "red-circle",
-        carre2: "red-carre-2",
-        triangle2: "red-triangle-2",
-        circle2: "red-circle-2",
       });
       document.documentElement.style.setProperty("--color", "#ff0000");
       document.documentElement.style.setProperty(
@@ -104,11 +92,6 @@ function Home() {
   return (
     <div className="home-page">
       <div className="first-section">
-        <div className="mobile-section">
-          <div className={className.carre2}></div>
-          <div className={className.triangle2}></div>
-          <div className={className.circle2}></div>
-        </div>
         <div
           className="my-name"
           onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
