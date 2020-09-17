@@ -19,7 +19,7 @@ function Navbar() {
         <span></span>
         <span></span>
       </div>
-      <ul className="nav">
+      <ul className={`nav ${Navbar}`}>
         <li className={`list-item1 ${Navbar}`}>
           <Link to="/about" className="nav-link">
             ABOUT
