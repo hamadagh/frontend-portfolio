@@ -110,33 +110,24 @@
   .third-section {
     width: 35%;
   }
-  /* home page */
-
-  /* ----------------------------------------------------------- */
-
-  /* about page */
-  .about-me {
-    margin-top: 100px;
-    margin-left: 15px;
-    width: 70vw;
-  }
-  .about-intro {
-    font-size: 24px;
-  }
-  .about-text {
-    font-size: 20px;
-  }
-  /* about page */
-
-  /* ----------------------------------------------------------- */
-
-  /* projects page */
-  .project {
-    font-size: 20px;
-  }
-  /* projects page */
 }
-@media only screen and (min-width: 401px) and (max-width: 759px) {
+@media only screen and (min-width: 401px) and (max-width: 779px) {
+  .greeting {
+    font-size: 13vw;
+  }
+  #carre {
+    position: relative;
+    top: 140px;
+    right: 250px;
+  }
+  #triangle {
+    position: relative;
+    top: 120px;
+  }
+  #circle {
+    position: relative;
+    top: 270px;
+  }
 }
 @media only screen and (min-width: 760px) and (max-width: 999px) {
 }
@@ -146,6 +137,31 @@
 }
 @media only screen and (min-width: 1601px) {
 }
+/* home page */
+
+/* ----------------------------------------------------------- */
+
+/* about page */
+.about-me {
+  margin-top: 100px;
+  margin-left: 15px;
+  width: 70vw;
+}
+.about-intro {
+  font-size: 24px;
+}
+.about-text {
+  font-size: 20px;
+}
+/* about page */
+
+/* ----------------------------------------------------------- */
+
+/* projects page */
+.project {
+  font-size: 20px;
+}
+/* projects page */
 /* contact page */
 
 @media only screen and (min-width: 301px) and (max-width: 759px) {
@@ -154,7 +170,7 @@
     width: 0%;
   }
   .contact-left-part {
-    width: 100%;
+    width: 90%;
   }
 }
 @media only screen and (min-width: 760px) and (max-width: 999px) {

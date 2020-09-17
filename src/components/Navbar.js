@@ -12,7 +12,7 @@ function Navbar() {
     }
   };
   return (
-    <div className="nav-bar">
+    <div className="nav-bar" id="nav-bar">
       <div id="nav-icon" onClick={handleClick} className={Navbar}>
         <span></span>
         <span></span>

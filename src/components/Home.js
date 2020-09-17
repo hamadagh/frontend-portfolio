@@ -123,14 +123,17 @@ function Home() {
 
           <animated.div
             className={className.carre}
+            id="carre"
             style={{ transform: props.xy.interpolate(trans2) }}
           />
           <animated.div
             className={className.triangle}
+            id="triangle"
             style={{ transform: props.xy.interpolate(trans4) }}
           />
           <animated.div
             className={className.circle}
+            id="circle"
             style={{ transform: props.xy.interpolate(trans3) }}
           />
         </div>
