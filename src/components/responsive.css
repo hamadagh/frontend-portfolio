@@ -66,6 +66,11 @@
     font-size: 20px;
   }
   /* about page */
+  /* projects page */
+  .project {
+    font-size: 20px;
+  }
+  /* projects page */
 }
 @media only screen and (min-width: 401px) and (max-width: 779px) {
   .greeting {
@@ -99,11 +104,6 @@
 
 /* ----------------------------------------------------------- */
 
-/* projects page */
-.project {
-  font-size: 20px;
-}
-/* projects page */
 /* contact page */
 
 @media only screen and (min-width: 301px) and (max-width: 759px) {
