@@ -11,6 +11,9 @@ function Navbar() {
       setNavbar("close");
     }
   };
+  const handleLinkClick = () => {
+    setNavbar("close");
+  };
   return (
     <div className="nav-bar" id="nav-bar">
       <div id="nav-icon" onClick={handleClick} className={Navbar}>
@@ -21,17 +24,17 @@ function Navbar() {
       </div>
       <ul className={`nav ${Navbar}`}>
         <li className={`list-item1 ${Navbar}`}>
-          <Link to="/about" className="nav-link">
+          <Link to="/about" className="nav-link" onClick={handleLinkClick}>
             ABOUT
           </Link>
         </li>
         <li className={`list-item2 ${Navbar}`}>
-          <Link to="/projects" className="nav-link">
+          <Link to="/projects" className="nav-link" onClick={handleLinkClick}>
             PROJECTS
           </Link>
         </li>
         <li className={`list-item3 ${Navbar}`}>
-          <Link to="/contact" className="nav-link">
+          <Link to="/contact" className="nav-link" onClick={handleLinkClick}>
             CONTACT
           </Link>
         </li>
