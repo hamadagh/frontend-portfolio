@@ -1,4 +1,15 @@
 @media only screen and (max-width: 400px) {
+  /* Navbar */
+
+  .nav-link {
+    font-size: 10px;
+  }
+  #nav-icon {
+    width: 25px;
+    height: 10px;
+  }
+
+  /* Navbar */
   /* home page */
   .first-section {
     margin-left: 10px;
@@ -15,6 +26,7 @@
 
   .full-stack-section {
     margin-bottom: 0px;
+    height: 19%;
   }
   .full-stack {
     font-size: 16px;
